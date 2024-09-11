@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLOWERGALLERY-CSSGRID</title>
+    <style>
+      *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body{
+        background-color: white;
+        padding: 10px;
+      }
+
+      img{
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+        display: inline-block;
+      }
+
+      .container > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container  > div > img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+
+      .container{
+        display: grid;
+        gap: 10px;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows:300px 400px 360px 300px;
+        
+      }
+
+      @media(max-width:768px){
+        .container{
+          grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto;
+        }
+      }
+
+      @media(max-width:480px){
+        .container{
+          grid-template-columns: 1fr 1fr; 
+          grid-template-rows: auto;
+        }
+      }
+     
+    </style>
+  </head>
+
+  <div class = "container">
+    <div>
+      <img src="https://i.pinimg.com/564x/27/2c/78/272c785f5e38c9f036f14e43d25b80c1.jpg" alt="flower 1">
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/564x/71/65/1e/71651e756dc69c9a8b9935507315d4c3.jpg" alt="flower 2">
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/564x/aa/96/aa/aa96aa648984841ea32f0467c74c8acd.jpg" alt="flower 3">
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/564x/39/e4/1d/39e41d779f815b93e334e2cec0fbfdee.jpg" alt="flower 4">
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/564x/7d/7f/17/7d7f17daa4ec4111b78b74ace1816d92.jpg" alt="flower 5">
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/564x/af/6f/51/af6f512061a5d21b8f48cac71f2ef932.jpg" alt="flower 6">
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/564x/f0/c9/b1/f0c9b19ccfbf85eed60eefa145e59d85.jpg" alt="flower 7">
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/564x/90/0e/68/900e685ef0e121e93e74792a824299aa.jpg" alt="flower 8">
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/564x/f7/b1/c2/f7b1c2893594052543ba7c771bdb9bb4.jpg" alt="flower 9">
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/564x/9e/04/b1/9e04b16b37713207f88586f19be67fdf.jpg" alt="flower 10">
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/564x/b7/23/c0/b723c061e42cde202f08b45f0ac83c53.jpg" alt="flower 11">
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/564x/5b/71/59/5b715992316adaa0fe94114d65759f44.jpg" alt="flower 12">
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/564x/3c/0c/29/3c0c29c7d752849ce0c5575095fa0fbc.jpg" alt="flower 13">
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/564x/f5/f4/14/f5f4140dabdb1d4908443ae8657cc8f7.jpg" alt="flower 14">
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/564x/51/57/e5/5157e5f70e492ef588f5976307967754.jpg" alt="flower 15">
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/564x/76/8d/ed/768ded15224044898d726624a9ac609d.jpg" alt="flower 16">
+    </div>
+   
+   </div>
+  
+  </body>
+</html>
